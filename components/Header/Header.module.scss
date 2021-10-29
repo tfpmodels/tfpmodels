@@ -1,0 +1,11 @@
+@import "../../styles/variables";
+
+.headerNavLink {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: auto 20px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

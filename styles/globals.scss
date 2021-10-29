@@ -1,0 +1,41 @@
+@import "variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Cormorant Garamond", serif !important;
+  font-size: 26px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none !important;
+  color: $secondaryColor !important;
+}
+
+.tfp-btn {
+  background-color: $tertiaryColor;
+  color: $primaryColor;
+  width: fit-content;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 10px 20px;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}
+
+.tfp-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 20px auto;
+}
+
+* {
+  box-sizing: border-box;
+  font-size: 100%;
+}

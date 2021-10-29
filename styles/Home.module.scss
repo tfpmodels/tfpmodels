@@ -1,0 +1,34 @@
+.container {
+  padding: 0 2rem;
+}
+
+.homeContainer {
+  position: absolute;
+  top: 460px;
+  padding-bottom: 20px;
+}
+
+.aboutUsContainer {
+  display: flex;
+  margin: auto 100px;
+  margin-bottom: 20px;
+  height: 400px;
+
+  .infoDiv {
+    max-width: 75%;
+    position: relative;
+
+    .content {
+      margin: auto 50px;
+    }
+
+    .aboutBtn {
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+    }
+  }
+
+  .imgDiv {
+  }
+}
