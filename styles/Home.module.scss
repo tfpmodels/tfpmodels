@@ -1,3 +1,5 @@
+@import "./variables";
+
 .container {
   padding: 0 2rem;
 }
@@ -5,6 +7,7 @@
 .homeContainer {
   position: absolute;
   top: 460px;
+  left: 0;
   padding-bottom: 20px;
 }
 
@@ -30,5 +33,45 @@
   }
 
   .imgDiv {
+  }
+}
+
+.legendContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: auto 80px;
+
+  .horizontalLine {
+    height: 3px;
+    width: 500px;
+    border-radius: 20px;
+    background-color: $secondaryColor;
+  }
+
+  .legendTitle {
+    display: inline;
+  }
+}
+
+.contactUsSection {
+  position: relative;
+  background: url("../public/images/tfpBackground.png");
+  background-repeat: repeat;
+  background-size: cover;
+  background-color: $tertiaryColor;
+  height: 340px;
+  padding-left: 150px;
+  padding-right: 150px;
+  display: flex;
+  justify-content: space-between;
+
+  .contactImage {
+    width: 273px;
+  }
+
+  .contactContent {
+    width: 350px;
+    text-align: center;
   }
 }

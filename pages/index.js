@@ -5,6 +5,7 @@ import Layout from "../components/Layout/Layout";
 import styles from "../styles/Home.module.scss";
 import ModelImage from "../public/images/model.jpg";
 import Footer from "../components/Footer/Footer";
+import OurModels from "../components/OurModels/OurModels";
 // import HomePageVideo from "../public/videos/homeBackground.mp4";
 
 export default function Home() {
@@ -31,6 +32,32 @@ export default function Home() {
         <div className={styles.imgDiv}>
           <Image src={ModelImage} height="400px" width="320px" alt="model" />
         </div>
+      </div>
+    );
+  };
+
+  const ContactUsSection = () => {
+    return (
+      <div className={styles.contactUsSection}>
+        <div className={styles.contactImage}>
+          <Image src={ModelImage} layout="responsive" />
+        </div>
+        <div className={styles.contactContent}>
+          <div className="tfp-secondary-title">
+            DO YOU WANT TO BE A TFP MODEL?
+          </div>
+          <div className="tfp-secondary-btn">CONTACT US NOW</div>
+        </div>
+      </div>
+    );
+  };
+
+  const OurModelsLegend = () => {
+    return (
+      <div className={styles.legendContainer}>
+        <div className={styles.horizontalLine}></div>
+        <div className={`tfp-title ${styles.legendTitle} mx-3`}>OUR MODELS</div>
+        <div className={styles.horizontalLine}></div>
       </div>
     );
   };
@@ -63,6 +90,11 @@ export default function Home() {
         </video>
         <div className={styles.homeContainer}>
           <AboutUs />
+
+          <OurModelsLegend />
+          <OurModels />
+
+          <ContactUsSection />
 
           <Footer />
         </div>

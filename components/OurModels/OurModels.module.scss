@@ -1,0 +1,60 @@
+@import "../../styles/variables";
+
+.container {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: solid black 3px;
+}
+
+.modelsCarouselContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  margin: auto 80px;
+  margin-bottom: 20px;
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .leftArrow {
+    left: -50px;
+  }
+
+  .rightArrow {
+    right: -50px;
+  }
+}
+
+.imageWrapper {
+  position: relative;
+  width: 320px;
+  height: 400px;
+
+  .imageInfo {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba($color: $tertiaryColor, $alpha: 0.5);
+    transition: visibility 0s, opacity 0.5s linear;
+  }
+
+  &:hover {
+    cursor: pointer;
+    .imageInfo {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}

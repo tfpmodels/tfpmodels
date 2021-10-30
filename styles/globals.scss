@@ -29,7 +29,28 @@ a {
   }
 }
 
+.tfp-secondary-btn {
+  background-color: $primaryColor;
+  color: $secondaryColor;
+  width: fit-content;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 10px 20px;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}
+
 .tfp-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 20px auto;
+}
+
+.tfp-secondary-title {
+  color: $primaryColor;
   font-size: 1.5em;
   font-weight: bold;
   margin: 20px auto;
