@@ -90,7 +90,7 @@ const OurModels = () => {
         </div>
 
         {shownImagesIndexes.map((imageIndex) => (
-          <ImageWrapper imageIndex={imageIndex} />
+          <ImageWrapper key={imageIndex} imageIndex={imageIndex} />
         ))}
 
         <div

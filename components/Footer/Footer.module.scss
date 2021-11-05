@@ -1,0 +1,14 @@
+@import "../../styles/variables";
+
+.footerContainer {
+  background-color: $secondaryColor;
+  padding: 30px;
+}
+
+.navigationLink {
+  color: $primaryColor;
+
+  a {
+    color: $primaryColor !important;
+  }
+}

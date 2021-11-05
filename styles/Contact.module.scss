@@ -1,0 +1,9 @@
+@import "./variables";
+
+.contactEmail {
+  a {
+    &:hover {
+      color: $tertiaryColor !important;
+    }
+  }
+}

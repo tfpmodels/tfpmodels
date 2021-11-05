@@ -6,6 +6,7 @@ import styles from "../styles/Home.module.scss";
 import ModelImage from "../public/images/model.jpg";
 import Footer from "../components/Footer/Footer";
 import OurModels from "../components/OurModels/OurModels";
+import OurLatestNews from "../components/OurLatestNews/OurLatestNews";
 // import HomePageVideo from "../public/videos/homeBackground.mp4";
 
 export default function Home() {
@@ -36,17 +37,33 @@ export default function Home() {
     );
   };
 
-  const ContactUsSection = () => {
+  const ApplySection = () => {
     return (
-      <div className={styles.contactUsSection}>
-        <div className={styles.contactImage}>
+      <div className={styles.applySection}>
+        {/* <div className={styles.contactImage}>
           <Image src={ModelImage} layout="responsive" />
-        </div>
+        </div> */}
         <div className={styles.contactContent}>
           <div className="tfp-secondary-title">
             DO YOU WANT TO BE A TFP MODEL?
           </div>
-          <div className="tfp-secondary-btn">CONTACT US NOW</div>
+          <div className="tfp-secondary-btn d-inline-block">APPLY NOW</div>
+        </div>
+      </div>
+    );
+  };
+
+  const BookForShootSection = () => {
+    return (
+      <div className={styles.bookForShootSection}>
+        <div className="text-center">
+          <div className="tfp-title p-4">WE HAVE THE BEST MODELS !</div>
+          <Link href="/">
+            <div className="tfp-btn d-inline-block mx-3">BOOK FOR SHOOT</div>
+          </Link>
+          <Link href="/contact">
+            <div className="tfp-btn d-inline-block mx-3">CONTACT US</div>
+          </Link>
         </div>
       </div>
     );
@@ -94,7 +111,9 @@ export default function Home() {
           <OurModelsLegend />
           <OurModels />
 
-          <ContactUsSection />
+          <ApplySection />
+          <BookForShootSection />
+          <OurLatestNews />
 
           <Footer />
         </div>

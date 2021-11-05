@@ -7,6 +7,7 @@ body {
   margin: 0;
   font-family: "Cormorant Garamond", serif !important;
   font-size: 26px;
+  width: 100vw;
 }
 
 a {
@@ -54,6 +55,37 @@ a {
   font-size: 1.5em;
   font-weight: bold;
   margin: 20px auto;
+}
+
+.color-primary {
+  color: $primaryColor;
+}
+
+.color-secondary {
+  color: $secondaryColor;
+}
+
+.color-tertiary {
+  color: $tertiaryColor;
+}
+
+.bg-color-primary {
+  background-color: $primaryColor;
+}
+
+.bg-color-secondary {
+  background-color: $secondaryColor;
+}
+
+.bg-color-tertiary {
+  background-color: $tertiaryColor;
+}
+
+.hover-effect {
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
 }
 
 * {

@@ -4,7 +4,8 @@ import { BsWhatsapp } from "react-icons/bs";
 import { ImInstagram } from "react-icons/im";
 import { FaFacebookF } from "react-icons/fa";
 
-import TFP_Logo from "../../public/images/TFP.png";
+import TFP_Logo from "../../public/images/TFP-WHITE-PNG.png";
+import styles from "./Footer.module.scss";
 
 const Footer = () => {
   const NavigationLink = ({
@@ -13,7 +14,7 @@ const Footer = () => {
     isLastLink = false,
   }) => {
     return (
-      <div className="d-flex">
+      <div className={`d-flex ${styles.navigationLink}`}>
         <Link href={link}>
           <a>{title}</a>
         </Link>
@@ -23,16 +24,7 @@ const Footer = () => {
   };
 
   return (
-    <div
-      style={
-        {
-          // position: "relative",
-          // bottom: "20px",
-          // left: "50%",
-          // transform: "translateX(-50%)",
-        }
-      }
-    >
+    <div className={styles.footerContainer}>
       <div className="d-flex justify-content-center">
         <Link href="/">
           <a>
@@ -48,14 +40,14 @@ const Footer = () => {
         <NavigationLink title="CONTACT" link="/contact" isLastLink={true} />
       </div>
 
-      <div className="d-flex justify-content-center">
-        <div className="mx-2">
+      <div className="d-flex justify-content-center color-primary">
+        <div className="mx-2 hover-effect">
           <BsWhatsapp />
         </div>
-        <div className="mx-2">
+        <div className="mx-2 hover-effect">
           <ImInstagram />
         </div>
-        <div className="mx-2">
+        <div className="mx-2 hover-effect">
           <FaFacebookF />
         </div>
       </div>

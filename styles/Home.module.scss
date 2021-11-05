@@ -6,9 +6,9 @@
 
 .homeContainer {
   position: absolute;
+  width: 100%;
   top: 460px;
   left: 0;
-  padding-bottom: 20px;
 }
 
 .aboutUsContainer {
@@ -54,17 +54,17 @@
   }
 }
 
-.contactUsSection {
-  position: relative;
+.applySection {
   background: url("../public/images/tfpBackground.png");
   background-repeat: repeat;
   background-size: cover;
   background-color: $tertiaryColor;
-  height: 340px;
-  padding-left: 150px;
-  padding-right: 150px;
+  // padding-left: 150px;
+  // padding-right: 150px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  padding-bottom: 20px;
+  // margin-bottom: 10px;
 
   .contactImage {
     width: 273px;
@@ -73,5 +73,64 @@
   .contactContent {
     width: 350px;
     text-align: center;
+  }
+}
+
+.bookForShootSection {
+  position: relative;
+  height: 340px;
+  border-top: solid $secondaryColor 3px;
+  border-bottom: solid $secondaryColor 3px;
+  margin-bottom: 20px;
+
+  & > div {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../public/images/tfpBackground.png");
+    background-repeat: repeat;
+    background-size: cover;
+    opacity: 0.2;
+  }
+}
+
+.ourLatestNews {
+  position: relative;
+  text-align: center;
+  margin: auto 60px;
+  margin-bottom: 20px;
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .leftArrow {
+    left: -50px;
+  }
+
+  .rightArrow {
+    right: -50px;
+  }
+
+  .newsContainer {
+    display: flex;
+    justify-content: space-around;
+    .newsItem {
+      width: fit-content;
+    }
   }
 }
