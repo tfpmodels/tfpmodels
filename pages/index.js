@@ -47,7 +47,9 @@ export default function Home() {
           <div className="tfp-secondary-title">
             DO YOU WANT TO BE A TFP MODEL?
           </div>
-          <div className="tfp-secondary-btn d-inline-block">APPLY NOW</div>
+          <Link href="/apply">
+            <div className="tfp-secondary-btn d-inline-block">APPLY NOW</div>
+          </Link>
         </div>
       </div>
     );

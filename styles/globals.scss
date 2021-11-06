@@ -10,6 +10,39 @@ body {
   width: 100vw;
 }
 
+* {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+  background-color: $primaryColor;
+
+  /* Track */
+  &-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+
+    &:hover {
+      cursor: pointer !important;
+    }
+  }
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $secondaryColor;
+  border-radius: 10px;
+
+  /* Handle on hover */
+  &:hover {
+    background-color: rgba($color: $secondaryColor, $alpha: 0.8);
+    cursor: pointer !important;
+  }
+}
+
 a {
   color: inherit;
   text-decoration: none !important;
@@ -88,7 +121,71 @@ a {
   }
 }
 
-* {
-  box-sizing: border-box;
-  font-size: 100%;
+.phoneInput {
+  border: none !important;
+
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+
+.phoneInputBtn {
+  border-collapse: "collapse" !important;
+  background-color: "transparent" !important;
+  border-right: "none" !important;
+  border: "none" !important;
+}
+
+.phoneInputContainer {
+  border: "solid 2px black" !important;
+  border-radius: "20px" !important;
+  padding: "10px" !important;
+}
+
+.dateInput {
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  width: 400px;
+}
+
+.flatpickr-calendar {
+  width: 400px !important;
+
+  .flatpickr-months {
+    span {
+      &:hover {
+        svg {
+          fill: $secondaryColor;
+        }
+      }
+    }
+  }
+
+  .flatpickr-innerContainer {
+    justify-content: center;
+  }
+
+  .flatpickr-day {
+    &[aria-current] {
+      border-bottom-color: $secondaryColor !important;
+    }
+
+    &:hover {
+      background-color: $secondaryColor !important;
+      border-color: $secondaryColor !important;
+      color: $primaryColor !important;
+    }
+
+    &.selected {
+      background-color: $tertiaryColor !important;
+      border-color: $tertiaryColor !important;
+
+      &:hover {
+        background-color: $secondaryColor !important;
+        border-color: $secondaryColor !important;
+        color: $primaryColor !important;
+      }
+    }
+  }
 }
