@@ -189,3 +189,18 @@ a {
     }
   }
 }
+
+.TFPActionBtn {
+  border: solid 3px $secondaryColor;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 20px;
+  font-weight: bold;
+
+  &:hover {
+    border: solid 3px $primaryColor;
+    background-color: $tertiaryColor;
+    color: $primaryColor;
+    cursor: pointer;
+  }
+}

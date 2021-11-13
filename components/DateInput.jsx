@@ -22,7 +22,7 @@ const DateInput = ({
       style={{
         display: "flex",
         flexDirection: "column",
-        margin: "20px",
+        margin: "20px 0",
         ...style,
       }}
       className={className}

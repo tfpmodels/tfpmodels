@@ -3,7 +3,8 @@ import { colors } from "./variables";
 export const TFPSelectsStyles = {
   container: (provided, state) => ({
     ...provided,
-    width: "400px",
+    // width: "400px",
+    width: "100%",
     borderRadius: "20px",
     "&:focus": {
       border: `solid ${colors.secondary} 2px`,
@@ -35,4 +36,10 @@ export const TFPSelectsStyles = {
       },
     };
   },
+};
+
+export const fieldWidthOptions = {
+  sm: "180px",
+  md: "280px",
+  lg: "400px",
 };
