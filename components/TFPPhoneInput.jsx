@@ -32,7 +32,7 @@ const TFPPhoneInput = ({
   };
 
   return (
-    <div style={{ margin: "20px", ...style }} className={className}>
+    <div style={{ margin: "20px 0", ...style }} className={className}>
       <div className="textInputLabel">{label}</div>
       <PhoneInput
         inputProps={{

@@ -1,4 +1,5 @@
 import { Field } from "formik";
+import { fieldWidthOptions } from "../../styles/styles";
 
 const TextInput = ({
   type,
@@ -7,19 +8,15 @@ const TextInput = ({
   size = "lg",
   className = "",
   style = {},
+  besideTextField, // react component or node
 }) => {
-  const fieldWidthOptions = {
-    sm: "180px",
-    md: "280px",
-    lg: "400px",
-  };
   const styles = (
     <style jsx global>
       {`
         .textInputContainer {
           display: flex;
           flex-direction: column;
-          margin: 20px;
+          margin: 20px 0;
         }
         .textInputLabel {
           display: inline-block;
@@ -27,7 +24,6 @@ const TextInput = ({
         }
         .textField {
           border-radius: 20px;
-          width: ${fieldWidthOptions[size]};
           padding: 10px;
         }
       `}
@@ -37,7 +33,15 @@ const TextInput = ({
     <div style={style} className={`textInputContainer ${className}`}>
       {styles}
       {label && <div className="textInputLabel">{label}</div>}
-      <Field type={type} name={name} className="textField" />
+      <div className="d-flex">
+        <Field
+          type={type}
+          name={name}
+          className="textField"
+          style={{ width: fieldWidthOptions[size] }}
+        />
+        {besideTextField && besideTextField}
+      </div>
     </div>
   );
 };

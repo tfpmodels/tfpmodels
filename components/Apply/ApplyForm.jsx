@@ -1,18 +1,11 @@
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Formik, Form, FieldArray, Field, ErrorMessage } from "formik";
 import { useState } from "react";
-import DateInput from "../DateInput";
 import Layout from "../Layout/Layout";
-import SelectInput from "../SelectInput";
-import TextInput from "../TextInput/TextInput";
-import TFPPhoneInput from "../TFPPhoneInput";
+import ApplyFirstSection from "./ApplyFirstSection";
+import ApplySecondSection from "./ApplySecondSection";
 
 const ApplyForm = () => {
-  const [formSection, setFormSection] = useState(1);
-
-  const genderOptions = [
-    { label: "MALE", value: "male" },
-    { label: "FEMALE", value: "female" },
-  ];
+  const [formSection, setFormSection] = useState(2);
 
   return (
     <Layout>
@@ -30,6 +23,20 @@ const ApplyForm = () => {
           gender: "",
           email: "",
           address: "",
+          socialMedia: [""],
+          height: "",
+          waist: "",
+          bust: "",
+          hips: "",
+          shoeSize: "",
+          eyeColor: "",
+          hairColor: "",
+          images: {
+            profile: null,
+            headShot: null,
+            midLength: null,
+            fullLength: null,
+          },
         }}
       >
         {(formikProps) => {
@@ -45,35 +52,14 @@ const ApplyForm = () => {
 
           return (
             <Form>
-              <div className="d-flex">
-                <TextInput
-                  className="col-6"
-                  type="text"
-                  name="fullName"
-                  label="FULL NAME"
+              {formSection === 1 ? (
+                <ApplyFirstSection
+                  formikProps={formikProps}
+                  setFormSection={setFormSection}
                 />
-                <TFPPhoneInput
-                  className="col-6"
-                  values={values}
-                  setValues={setValues}
-                  prop="phoneNumber"
-                />
-              </div>
-
-              <div className="d-flex">
-                <DateInput
-                  label="DATE OF BIRTH"
-                  values={values}
-                  setValues={setValues}
-                  prop="birthDate"
-                  className="col-6"
-                />
-                <SelectInput
-                  options={genderOptions}
-                  label="GENDER"
-                  className="col-6"
-                />
-              </div>
+              ) : (
+                <ApplySecondSection formikProps={formikProps} />
+              )}
             </Form>
           );
         }}

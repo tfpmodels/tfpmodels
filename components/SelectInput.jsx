@@ -1,11 +1,34 @@
 import Select from "react-select";
-import { TFPSelectsStyles } from "../styles/styles";
+import { fieldWidthOptions, TFPSelectsStyles } from "../styles/styles";
 
-const SelectInput = ({ options, label, style = {}, className = "" }) => {
+const SelectInput = ({
+  options,
+  label,
+  values,
+  setValues,
+  prop,
+  style = {},
+  className = "",
+  size = "lg",
+}) => {
+  const onChange = (optionSelected, action) => {
+    setValues((values) => ({
+      ...values,
+      [prop]: optionSelected,
+    }));
+  };
   return (
-    <div style={{ margin: "20px", ...style }} className={className}>
+    <div
+      style={{ margin: "20px 0", width: fieldWidthOptions[size], ...style }}
+      className={className}
+    >
       {label && <div className="textInputLabel">{label}</div>}
-      <Select options={options} styles={TFPSelectsStyles} />
+      <Select
+        value={values[prop]}
+        options={options}
+        styles={TFPSelectsStyles}
+        onChange={onChange}
+      />
     </div>
   );
 };
