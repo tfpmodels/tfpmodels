@@ -52,8 +52,8 @@ const Contact = () => {
       >
         <h4 className="my-auto">{label}</h4>
         <div className="mx-5">
-          {contacts.map((contact) => (
-            <div className={styles.contactEmail}>
+          {contacts.map((contact, index) => (
+            <div key={index} className={styles.contactEmail}>
               <a href={contact.email}>{contact.label}</a>
             </div>
           ))}
@@ -71,13 +71,13 @@ const Contact = () => {
           rel="stylesheet"
           href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
           integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-          crossorigin=""
+          crossOrigin=""
         />
-        <script
+        {/* <script
           src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
           integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-          crossorigin=""
-        ></script>
+          crossOrigin=""
+        ></script> */}
       </Head>
 
       <Layout>

@@ -120,8 +120,8 @@ const OurLatestNews = () => {
       <div className="tfp-title">OUR LATEST NEWS</div>
 
       <div className={styles.newsContainer}>
-        {currentNews.map((news) => (
-          <NewsItem item={news} />
+        {currentNews.map((news, index) => (
+          <NewsItem key={index} item={news} />
         ))}
       </div>
 
