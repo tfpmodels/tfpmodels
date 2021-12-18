@@ -16,7 +16,7 @@ const About = () => {
 
         <div>
           <div className="text-center mb-4">
-            Established in 2021, TFP's aim is to revolutinize the modeling
+            Established in 2021, TFP&apos;s aim is to revolutinize the modeling
             industry by including an exquisite, diverse collection of people
             that might not always fit the industry norm for looks. We work with
             all kinds of beautiful individuals to help them see beyond what is

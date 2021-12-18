@@ -24,7 +24,7 @@ export default function Home() {
             TFP modeling agency, working globally on maintaining the concept of
             diversity not only in people but also in ideas and photoshoot.
           </div>
-          <Link href="/about">
+          <Link href="/about" passHref>
             <div className={`tfp-btn ${styles.aboutBtn}`}>
               SEE MORE ABOUT US
             </div>
@@ -47,7 +47,7 @@ export default function Home() {
           <div className="tfp-secondary-title">
             DO YOU WANT TO BE A TFP MODEL?
           </div>
-          <Link href="/apply">
+          <Link href="/apply" passHref>
             <div className="tfp-secondary-btn d-inline-block">APPLY NOW</div>
           </Link>
         </div>
@@ -60,10 +60,10 @@ export default function Home() {
       <div className={styles.bookForShootSection}>
         <div className="text-center">
           <div className="tfp-title p-4">WE HAVE THE BEST MODELS !</div>
-          <Link href="/">
+          <Link href="/" passHref>
             <div className="tfp-btn d-inline-block mx-3">BOOK FOR SHOOT</div>
           </Link>
-          <Link href="/contact">
+          <Link href="/contact" passHref>
             <div className="tfp-btn d-inline-block mx-3">CONTACT US</div>
           </Link>
         </div>

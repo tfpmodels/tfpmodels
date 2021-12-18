@@ -39,8 +39,8 @@ const Models = () => {
           <PageTitle title="OUR MODELS" />
 
           <div className="d-flex flex-wrap justify-content-around">
-            {imagesArr.map((image) => (
-              <div className={styles.modelCardContainer}>
+            {imagesArr.map((image, index) => (
+              <div key={index} className={styles.modelCardContainer}>
                 <ModelCard image={image} />
               </div>
             ))}
