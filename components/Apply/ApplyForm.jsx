@@ -58,7 +58,10 @@ const ApplyForm = () => {
                   setFormSection={setFormSection}
                 />
               ) : (
-                <ApplySecondSection formikProps={formikProps} />
+                <ApplySecondSection
+                  formikProps={formikProps}
+                  setFormSection={setFormSection}
+                />
               )}
             </Form>
           );

@@ -3,7 +3,7 @@ import styles from "./Apply.module.scss";
 import ImageInputCard from "./ImageInputCard";
 import ModelImage from "../../public/images/model.jpg";
 
-const ApplySecondSection = ({ formikProps }) => {
+const ApplySecondSection = ({ formikProps, setFormSection }) => {
   const TITLE = "TIME TO TAKE A PHOTO !";
   const {
     values,
@@ -16,6 +16,17 @@ const ApplySecondSection = ({ formikProps }) => {
 
   return (
     <div className={styles.applySecondSection}>
+      <div className="text-center">
+        <div
+          onClick={() => setFormSection(1)}
+          role="button"
+          className={`my-2 d-inline-block ${styles.sectionNavigationBtn}`}
+        >
+          <span style={{ fontSize: "40px" }}>&lt;-</span> MOVE TO STEP{" "}
+          <span style={{ fontSize: "40px" }}>1</span>
+        </div>
+      </div>
+
       <PageTitle title={TITLE} />
 
       <div style={{ margin: "auto 100px" }}>
@@ -26,13 +37,38 @@ const ApplySecondSection = ({ formikProps }) => {
         </ol>
       </div>
 
-      <div>
+      <div className="row">
         <ImageInputCard
           image={ModelImage}
-          ID="randomID"
+          ID="profileIMG"
+          alt="Profile Image"
           values={values}
           setValues={setValues}
           imageProp="profile"
+        />
+        <ImageInputCard
+          image={ModelImage}
+          ID="headShotIMG"
+          alt="Head Shot Image"
+          values={values}
+          setValues={setValues}
+          imageProp="headShot"
+        />
+        <ImageInputCard
+          image={ModelImage}
+          ID="midLengthIMG"
+          alt="Mid Length Image"
+          values={values}
+          setValues={setValues}
+          imageProp="midLength"
+        />
+        <ImageInputCard
+          image={ModelImage}
+          ID="fullLengthIMG"
+          alt="Full Length Image"
+          values={values}
+          setValues={setValues}
+          imageProp="fullLength"
         />
       </div>
     </div>

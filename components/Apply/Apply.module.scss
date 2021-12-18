@@ -1,8 +1,18 @@
+@import "../../styles/variables";
+
 .applySecondSection {
   ol {
     font-size: 35px;
     li {
       margin: 20px auto;
     }
+  }
+}
+
+.sectionNavigationBtn {
+  color: $secondaryColor;
+
+  &:hover {
+    color: $tertiaryColor;
   }
 }
