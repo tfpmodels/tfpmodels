@@ -13,7 +13,7 @@ export default function Home() {
   const homePageVideoSource =
     "https://www.youtube.com/embed/hgBfkFjF2v8?autohide=0&autoplay=1&controls=0&loop=0";
 
-  const HomePageVideo = require("../public/videos/homeBackground.mp4");
+  // const HomePageVideo = require("../public/videos/homeBackground.mp4");
 
   const AboutUs = () => {
     return (
@@ -104,8 +104,10 @@ export default function Home() {
             zIndex: -1,
           }}
         >
-          <source src={HomePageVideo} type="video/mp4" />
-          <source src={HomePageVideo} type="video/webm" />
+          {/* <source src={HomePageVideo} type="video/mp4" />
+          <source src={HomePageVideo} type="video/webm" /> */}
+          <source src={homePageVideoSource} type="video/mp4" />
+          <source src={homePageVideoSource} type="video/webm" />
         </video>
         <div className={styles.homeContainer}>
           <AboutUs />
