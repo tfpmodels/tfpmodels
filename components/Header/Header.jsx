@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { BsSearch } from "react-icons/bs";
-import TFP_Logo from "../../public/images/tfp.png";
+import TFP_Logo from "../../public/images/TFP.png";
 import styles from "./Header.module.scss";
 
 const Header = () => {
