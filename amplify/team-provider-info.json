@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-tfpmodels-dev-215601-authRole",
+      "UnauthRoleArn": "arn:aws:iam::167782726521:role/amplify-tfpmodels-dev-215601-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::167782726521:role/amplify-tfpmodels-dev-215601-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-tfpmodels-dev-215601-deployment",
+      "UnauthRoleName": "amplify-tfpmodels-dev-215601-unauthRole",
+      "StackName": "amplify-tfpmodels-dev-215601",
+      "StackId": "arn:aws:cloudformation:us-east-2:167782726521:stack/amplify-tfpmodels-dev-215601/0a66e7f0-6298-11ec-9c35-067fbed6718e",
+      "AmplifyAppId": "d1n4zfe4fvol2s"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d1n4zfe4fvol2s",
+          "type": "cicd"
+        }
+      },
+      "auth": {
+        "tfpmodelse341a434": {}
+      }
+    }
+  }
+}
