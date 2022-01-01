@@ -1,12 +1,12 @@
-const withVideos = require("next-videos")
+const withVideos = require("next-videos");
 
 // module.exports = withVideos()
 
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ["via.placeholder.com"]
+    domains: ["tfpmodelsagency.com", "drive.google.com"],
   },
-}
+};
 
-module.exports = withVideos()
+// module.exports = withVideos();

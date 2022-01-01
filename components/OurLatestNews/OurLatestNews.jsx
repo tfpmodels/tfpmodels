@@ -117,7 +117,7 @@ const OurLatestNews = () => {
           onClick={() => onNewsNavigate("backward")}
         />
       </div>
-      <div className="tfp-title">OUR LATEST NEWS</div>
+      <div className="tfp-title">Our Latest News</div>
 
       <div className={styles.newsContainer}>
         {currentNews.map((news, index) => (

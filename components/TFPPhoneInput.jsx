@@ -6,7 +6,7 @@ const TFPPhoneInput = ({
   values,
   setValues,
   prop = "phoneNumber",
-  label = "PHONE NUMBER",
+  label = "Phone Number",
   className = "",
   style = {},
 }) => {

@@ -28,7 +28,7 @@ const ApplyFirstSection = ({ formikProps, setFormSection }) => {
           color: ${colors.secondary};
         }
         .sectionNavigationBtn:hover {
-          color: ${colors.tertiary};
+          opacity: 0.8;
         }
       `}
     </style>
@@ -54,7 +54,7 @@ const ApplyFirstSection = ({ formikProps, setFormSection }) => {
       <div style={{ borderBottom: "solid 3px black", marginBottom: "20px" }}>
         {styles}
         <div className="tfp-btn mx-2" onClick={() => push("")}>
-          ADD SOCIAL MEDIA PROFILE
+          Add Social Media Profile
         </div>
         <div className="d-flex flex-wrap justify-content-start">
           {socialMedia &&
@@ -64,7 +64,7 @@ const ApplyFirstSection = ({ formikProps, setFormSection }) => {
                 key={index}
                 type="text"
                 name={`socialMedia.${index}`}
-                label="SOCIAL MEDIA"
+                label="Social Media"
                 className="col-6"
                 besideTextField={
                   socialMedia.length > 1 && <RemoveBtn index={index} />
@@ -83,7 +83,7 @@ const ApplyFirstSection = ({ formikProps, setFormSection }) => {
           className="col-6"
           type="text"
           name="fullName"
-          label="FULL NAME"
+          label="Full Name"
         />
         <TFPPhoneInput
           className="col-6"
@@ -93,7 +93,7 @@ const ApplyFirstSection = ({ formikProps, setFormSection }) => {
         />
 
         <DateInput
-          label="DATE OF BIRTH"
+          label="Date Of Birth"
           values={values}
           setValues={setValues}
           prop="birthDate"
@@ -101,19 +101,19 @@ const ApplyFirstSection = ({ formikProps, setFormSection }) => {
         />
         <SelectInput
           options={genderOptions}
-          label="GENDER"
+          label="Gender"
           className="col-6"
           values={values}
           setValues={setValues}
           prop="gender"
         />
 
-        <TextInput className="col-6" type="text" name="email" label="EMAIL" />
+        <TextInput className="col-6" type="text" name="email" label="Email" />
         <TextInput
           className="col-6"
           type="text"
           name="address"
-          label="ADDRESS"
+          label="Address"
         />
       </div>
 
@@ -123,41 +123,41 @@ const ApplyFirstSection = ({ formikProps, setFormSection }) => {
         <TextInput
           type="number"
           name="height"
-          label="HEIGHT"
+          label="Height"
           size="md"
           className="mx-3"
         />
         <TextInput
           type="number"
           name="waist"
-          label="WAIST"
+          label="Waist"
           size="md"
           className="mx-3"
         />
         <TextInput
           type="number"
           name="bust"
-          label="BUST"
+          label="Bust"
           size="md"
           className="mx-3"
         />
         <TextInput
           type="number"
           name="hips"
-          label="HIPS"
+          label="Hips"
           size="md"
           className="mx-3"
         />
         <TextInput
           type="number"
           name="shoeSize"
-          label="SHOE SIZE"
+          label="Shoe Size"
           size="md"
           className="mx-3"
         />
         <SelectInput
           options={eyeColorOptions}
-          label="EYE COLOR"
+          label="Eye Color"
           values={values}
           setValues={setValues}
           prop="eyeColor"
@@ -166,7 +166,7 @@ const ApplyFirstSection = ({ formikProps, setFormSection }) => {
         />
         <SelectInput
           options={hairColorOptions}
-          label="HAIR COLOR"
+          label="Hair Color"
           values={values}
           setValues={setValues}
           prop="hairColor"
@@ -181,7 +181,7 @@ const ApplyFirstSection = ({ formikProps, setFormSection }) => {
           role="button"
           className="my-5 d-inline-block sectionNavigationBtn"
         >
-          MOVE TO STEP <span style={{ fontSize: "40px" }}>2 -&gt;</span>
+          Move To Step <span style={{ fontSize: "40px" }}>2 -&gt;</span>
         </div>
       </div>
     </div>

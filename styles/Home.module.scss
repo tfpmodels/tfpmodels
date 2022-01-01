@@ -12,23 +12,20 @@
 }
 
 .aboutUsContainer {
-  display: flex;
-  margin: auto 100px;
+  // display: flex;
+  // margin: auto 100px;
+  // margin: auto auto;
   margin-bottom: 20px;
-  height: 400px;
+  // height: 400px;
 
   .infoDiv {
-    max-width: 75%;
-    position: relative;
-
     .content {
-      margin: auto 50px;
+      padding-left: 50px;
+      padding-right: 50px;
     }
 
     .aboutBtn {
-      position: absolute;
-      bottom: 0px;
-      left: 50%;
+      margin: auto;
     }
   }
 
@@ -55,10 +52,10 @@
 }
 
 .applySection {
-  background: url("../public/images/tfpBackground.png");
+  // background: url("../public/images/tfpBackground.png");
   background-repeat: repeat;
   background-size: cover;
-  background-color: $tertiaryColor;
+  background-color: $secondaryColor;
   // padding-left: 150px;
   // padding-right: 150px;
   display: flex;
@@ -78,29 +75,29 @@
 
 .bookForShootSection {
   position: relative;
-  height: 340px;
+  // height: 340px;
   border-top: solid $secondaryColor 3px;
-  border-bottom: solid $secondaryColor 3px;
+  // border-bottom: solid $secondaryColor 3px;
   margin-bottom: 20px;
 
-  & > div {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  &::before {
-    content: " ";
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: url("../public/images/tfpBackground.png");
-    background-repeat: repeat;
-    background-size: cover;
-    opacity: 0.2;
-  }
+  // & > div {
+  //   position: absolute;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  // }
+  // &::before {
+  //   content: " ";
+  //   display: block;
+  //   position: absolute;
+  //   left: 0;
+  //   top: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   // background: url("../public/images/tfpBackground.png");
+  //   background-repeat: repeat;
+  //   background-size: cover;
+  //   opacity: 0.2;
+  // }
 }
 
 .ourLatestNews {

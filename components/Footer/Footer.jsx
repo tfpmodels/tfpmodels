@@ -42,13 +42,25 @@ const Footer = () => {
 
       <div className="d-flex justify-content-center color-primary">
         <div className="mx-2 hover-effect">
-          <BsWhatsapp />
+          <Link href="https://wa.me/201090644513">
+            <a target="_blank" className="text-white">
+              <BsWhatsapp />
+            </a>
+          </Link>
         </div>
         <div className="mx-2 hover-effect">
-          <ImInstagram />
+          <Link href="https://www.instagram.com/tfpmodels_/">
+            <a target="_blank" className="text-white">
+              <ImInstagram />
+            </a>
+          </Link>
         </div>
         <div className="mx-2 hover-effect">
-          <FaFacebookF />
+          <Link href="https://www.facebook.com/TFP-Agency-110668798121257">
+            <a target="_blank" className="text-white">
+              <FaFacebookF />
+            </a>
+          </Link>
         </div>
       </div>
     </div>

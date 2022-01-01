@@ -14,7 +14,7 @@ const Header = () => {
       </Link>
 
       <div className="d-flex">
-        <div className="mx-4">
+        <div className="mx-4 d-flex flex-wrap">
           <Link href="/">
             <a className={styles.headerNavLink}>Home</a>
           </Link>
@@ -29,9 +29,9 @@ const Header = () => {
           </Link>
         </div>
 
-        <div role="button">
+        {/* <div role="button">
           <BsSearch size="30" fontWeight="bold" />
-        </div>
+        </div> */}
       </div>
     </div>
   );
