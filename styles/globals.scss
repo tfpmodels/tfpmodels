@@ -50,7 +50,9 @@ a {
 }
 
 .tfp-btn {
-  background-color: $tertiaryColor;
+  // background-color: $tertiaryColor;
+  // color: $primaryColor;
+  background-color: $secondaryColor;
   color: $primaryColor;
   width: fit-content;
   font-size: 0.8em;

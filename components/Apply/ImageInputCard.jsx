@@ -65,7 +65,7 @@ const ImageInputCard = ({
         />
         <TFPActionBtn
           onClick={onActionBtnClick}
-          label="INSERT PIC"
+          label="Insert Pic"
           className="mx-auto mt-3"
         />
       </div>

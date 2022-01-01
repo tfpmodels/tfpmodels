@@ -4,7 +4,7 @@ import ImageInputCard from "./ImageInputCard";
 import ModelImage from "../../public/images/model.jpg";
 
 const ApplySecondSection = ({ formikProps, setFormSection }) => {
-  const TITLE = "TIME TO TAKE A PHOTO !";
+  const TITLE = "Time To Take A Photo !";
   const {
     values,
     handleChange,
@@ -22,7 +22,7 @@ const ApplySecondSection = ({ formikProps, setFormSection }) => {
           role="button"
           className={`my-2 d-inline-block ${styles.sectionNavigationBtn}`}
         >
-          <span style={{ fontSize: "40px" }}>&lt;-</span> MOVE TO STEP{" "}
+          <span style={{ fontSize: "40px" }}>&lt;-</span> Move To Step{" "}
           <span style={{ fontSize: "40px" }}>1</span>
         </div>
       </div>
@@ -31,9 +31,9 @@ const ApplySecondSection = ({ formikProps, setFormSection }) => {
 
       <div style={{ margin: "auto 100px" }}>
         <ol type="1">
-          <li>MAKE SURE YOU WEAR NO MAKEUP</li>
-          <li>NO NEED FOR PROFESSIONAL PHOTOS</li>
-          <li>FOLLOW THE COMING SHOTS</li>
+          <li>Make Sure You Wear No Makeup</li>
+          <li>No Need For Professional Photos</li>
+          <li>Follow The Coming Shots</li>
         </ol>
       </div>
 

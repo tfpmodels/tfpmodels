@@ -1,9 +1,10 @@
 @import "./variables";
 
 .contactEmail {
+  text-align: end;
   a {
     &:hover {
-      color: $tertiaryColor !important;
+      opacity: 0.8;
     }
   }
 }

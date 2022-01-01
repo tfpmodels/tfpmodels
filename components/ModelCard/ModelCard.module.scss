@@ -8,11 +8,15 @@
     opacity: 0;
     position: absolute;
     width: 100%;
-    height: 70%;
+    height: 100%;
     bottom: 0;
     padding-left: 10px;
     padding-right: 10px;
-    background-color: rgba($color: $tertiaryColor, $alpha: 0.5);
+    color: $primaryColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: rgba($color: $secondaryColor, $alpha: 0.5);
     transition: visibility 0s, opacity 0.5s linear;
   }
 
