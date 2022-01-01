@@ -177,7 +177,7 @@ const OurModels = () => {
         />
 
         <div className={styles.imageInfo}>
-          <div>Length: {imagesArr[imageIndex].height}</div>
+          <div>Height: {imagesArr[imageIndex].height}</div>
           <div>Bust: {imagesArr[imageIndex].bust}</div>
           <div>Waist: {imagesArr[imageIndex].waist}</div>
           <div>Hips: {imagesArr[imageIndex].hips}</div>
