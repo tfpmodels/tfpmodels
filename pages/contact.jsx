@@ -54,7 +54,7 @@ const Contact = () => {
         <div className="mx-5">
           {contacts.map((contact, index) => (
             <div key={index} className={styles.contactEmail}>
-              <a href={contact.email} target="_blank">
+              <a href={contact.email} target="_blank" rel="noreferrer">
                 {contact.label}
               </a>
             </div>
