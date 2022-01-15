@@ -2,19 +2,19 @@ import Image from "next/image";
 
 import styles from "./ModelCard.module.scss";
 
-const ModelCard = ({ image }) => {
+const ModelCard = ({ model }) => {
   return (
     <div className={styles.modelCard}>
-      <Image src={image.source} layout="responsive" />
+      <Image src={model.source} layout="responsive" />
 
       <div className={styles.cardInfo}>
-        <div>Height: {image.height}</div>
-        <div>Bust: {image.bust}</div>
-        <div>Waist: {image.waist}</div>
-        <div>Hips: {image.hips}</div>
-        <div>Shoe: {image.shoe}</div>
-        <div>Hair: {image.hair}</div>
-        <div>Eye: {image.eye}</div>
+        <div>Height: {model.height}</div>
+        <div>Bust: {model.bust}</div>
+        <div>Waist: {model.waist}</div>
+        <div>Hips: {model.hips}</div>
+        <div>Shoe: {model.shoe}</div>
+        <div>Hair: {model.hair}</div>
+        <div>Eye: {model.eye}</div>
       </div>
     </div>
   );
