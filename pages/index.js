@@ -88,7 +88,7 @@ export default function Home() {
         <link rel="icon" href="/tfp-fav-icon.png" />
       </Head>
 
-      <Layout isHomePage={true}>
+      <Layout isHomePage={true} headerColor="primary">
         <video
           autoPlay
           muted
