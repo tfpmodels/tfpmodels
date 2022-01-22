@@ -31,6 +31,8 @@ const Models = () => {
                   pathname: "models/[modelNameID]",
                   query: { modelNameID: `${model.name}-${model.id}` },
                 }}
+                key={model.id}
+                passHref
               >
                 <div key={index} className={styles.modelCardContainer}>
                   <ModelCard model={model} />

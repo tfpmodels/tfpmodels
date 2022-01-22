@@ -8,7 +8,7 @@ const DisplayCard = ({ images }) => {
   const imagesArr = images.map((image) => {
     console.log(`image`, image);
     return (
-      <div style={{ maxWidth: "50%" }} className="mx-2">
+      <div key={image.src} style={{ maxWidth: "50%" }} className="mx-2">
         <Image key={image.src} src={image} priority={true} loader={myLoader} />
       </div>
     );
