@@ -5,7 +5,7 @@ import styles from "./ModelCard.module.scss";
 const ModelCard = ({ model }) => {
   return (
     <div className={styles.modelCard}>
-      <Image src={model.source} layout="responsive" />
+      <Image key={model.source.src} src={model.source} layout="responsive" />
 
       <div className={styles.cardInfo}>
         <div>Height: {model.height}</div>

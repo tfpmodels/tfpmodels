@@ -25,7 +25,13 @@ const Models = () => {
 
           <div className="d-flex flex-wrap justify-content-around">
             {ModelsData.map((model, index) => (
-              <Link href={`${router.asPath}/${model.name}-${model.id}`}>
+              // <Link href={`${router.asPath}/${model.name}-${model.id}`}>
+              <Link
+                href={{
+                  pathname: "models/[modelNameID]",
+                  query: { modelNameID: `${model.name}-${model.id}` },
+                }}
+              >
                 <div key={index} className={styles.modelCardContainer}>
                   <ModelCard model={model} />
                 </div>

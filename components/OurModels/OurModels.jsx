@@ -47,6 +47,7 @@ const OurModels = () => {
     return (
       <div className={styles.imageWrapper}>
         <Image
+          // key={Models[imageIndex].source.src}
           src={Models[imageIndex].source}
           height={Models[imageIndex].source.height}
           width={Models[imageIndex].source.width}
