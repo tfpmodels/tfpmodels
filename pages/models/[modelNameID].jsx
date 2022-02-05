@@ -81,7 +81,11 @@ const ModelProfile = () => {
   const ButtonLayout = ({ children, onClick }) => {
     return (
       // <div className="mx-4 py-4 d-flex align-items-end">
-      <div className="mx-4 d-flex align-items-center">
+      <div
+        className={`mx-4 d-flex ${
+          carouselIndex === 0 ? "align-items-start mt-5" : "align-items-center"
+        } align-items-lg-center`}
+      >
         <div role="button" onClick={onClick}>
           {children}
         </div>

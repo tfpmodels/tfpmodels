@@ -8,7 +8,7 @@ const Layout = ({
   headerColor = "secondary",
 }) => {
   return (
-    <div className={`primary-text-color ${styles.container}`}>
+    <div className={`primary-text-color px-0 px-lg-4 ${styles.container}`}>
       <Header color={headerColor} />
       {children}
       {!isHomePage && <Footer />}

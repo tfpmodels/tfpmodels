@@ -21,8 +21,8 @@ const MainCard = ({ modelData }) => {
   };
 
   return (
-    <div className="d-flex align-items-center">
-      <div className="col-6">
+    <div className="d-flex flex-column-reverse flex-lg-row align-items-center">
+      <div className="col-12 col-lg-6">
         <InfoItem label="HEIGHT" value={height} />
         <InfoItem label="BUST" value={bust} />
         <InfoItem label="WAIST" value={waist} />
@@ -31,7 +31,7 @@ const MainCard = ({ modelData }) => {
         <InfoItem label="HAIR" value={hair} />
         <InfoItem label="EYE" value={eye} />
       </div>
-      <div className="col-6">
+      <div className="col-12 col-lg-6">
         <Image key={source.src} src={source} loader={myLoader} />
       </div>
     </div>

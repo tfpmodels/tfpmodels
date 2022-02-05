@@ -20,7 +20,7 @@ const Header = ({ color = "secondary" }) => {
       </Link>
 
       <div className="d-flex">
-        <div className="mx-4 d-flex flex-wrap">
+        <div className="mx-0 mx-lg-4 d-flex flex-wrap flex-column flex-lg-row">
           <Link href="/">
             <a
               className={`${styles.headerNavLink} ${

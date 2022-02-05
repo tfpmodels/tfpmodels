@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { BiLeftArrowCircle } from "react-icons/bi";
 import { BiRightArrowCircle } from "react-icons/bi";
+import { GrNext, GrPrevious } from "react-icons/gr";
 import { Models } from "../../database/models";
 
 import styles from "./OurModels.module.scss";
@@ -43,9 +44,13 @@ const OurModels = () => {
     setShownImagesIndexes(newImagesArr);
   };
 
-  const ImageWrapper = ({ imageIndex }) => {
+  const ImageWrapper = ({ imageIndex, arrayIndex }) => {
     return (
-      <div className={styles.imageWrapper}>
+      <div
+        className={`${arrayIndex !== 0 && "d-none"} d-lg-block ${
+          styles.imageWrapper
+        }`}
+      >
         <Image
           // key={Models[imageIndex].source.src}
           src={Models[imageIndex].source}
@@ -74,18 +79,26 @@ const OurModels = () => {
           className={`${styles.arrow} ${styles.leftArrow}`}
           onClick={() => onImageNavigation("previous")}
         >
-          <BiLeftArrowCircle size={60} />
+          <GrPrevious size={60} />
         </div>
 
-        {shownImagesIndexes.map((imageIndex) => (
-          <ImageWrapper key={imageIndex} imageIndex={imageIndex} />
-        ))}
+        {shownImagesIndexes.map((imageIndex, index, array) => {
+          console.log("array", array);
+          console.log("index", index);
+          return (
+            <ImageWrapper
+              key={imageIndex}
+              imageIndex={imageIndex}
+              arrayIndex={index}
+            />
+          );
+        })}
 
         <div
           className={`${styles.arrow} ${styles.rightArrow}`}
           onClick={() => onImageNavigation("next")}
         >
-          <BiRightArrowCircle size={60} />
+          <GrNext size={60} />
         </div>
       </div>
 

@@ -14,11 +14,11 @@ const Footer = () => {
     isLastLink = false,
   }) => {
     return (
-      <div className={`d-flex ${styles.navigationLink}`}>
+      <div className={`d-flex justify-content-center ${styles.navigationLink}`}>
         <Link href={link}>
           <a>{title}</a>
         </Link>
-        {!isLastLink && <div className="mx-2">/</div>}
+        {!isLastLink && <div className="d-none d-lg-block mx-2">/</div>}
       </div>
     );
   };
@@ -33,7 +33,7 @@ const Footer = () => {
         </Link>
       </div>
 
-      <div className="d-flex justify-content-center">
+      <div className="d-flex flex-column flex-lg-row justify-content-center">
         <NavigationLink title="HOME" link="/" />
         <NavigationLink title="ABOUT" link="/about" />
         <NavigationLink title="MODELS" link="/models" />
